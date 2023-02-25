@@ -34,6 +34,3 @@ print('Добро пожаловать в Сербизатор! Эта прог�
 if __name__ == '__main__':
     while True:
         print(lat())
-    print('helloworld')
-
-    print('aboba')
