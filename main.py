@@ -1,21 +1,3 @@
-def lat():
-    inputed_list = list(input())
-    string = ''
-    for i in inputed_list:
-        if i in dictionary.keys():
-            string += dictionary.get(i)
-    return string
-
-
-def kir():
-    inputed_list = list(input())
-    string = ''
-    for i in inputed_list:
-        if i in dictionary_mirrored.keys():
-            string += dictionary_mirrored.get(i)
-    return string
-
-
 dictionary = {'A': 'А', 'a': 'а', 'B': 'Б', 'b': 'б', 'C': 'Ц', 'c': 'ц', 'Č': 'Ч', 'č': 'ч',
               'Ć': 'Ћ', 'ć': 'ћ', 'D': 'Д', 'd': 'д', 'Dž': 'Џ', 'dž': 'џ', 'Đ': 'Ђ', 'đ': 'ђ',
               'E': 'Е', 'e': 'е', 'F': 'Ф', 'f': 'ф', 'G': 'Г', 'g': 'г', 'H': 'Х', 'h': 'х',
@@ -31,6 +13,13 @@ print('Добро пожаловать в Сербизатор! Эта прог�
       'транслитерацию сербской кириллической азбуки в латинскую или наоборот, с учётом регистра.'
       'Введите слово или фразу, чтобы увидеть результат.')
 
-if __name__ == '__main__':
-    while True:
-        print(lat())
+inputed_list = list(input())
+    string = ''
+    for i in inputed_list:
+        if i in dictionary.keys():
+            string += dictionary.get(i)
+        if i in dictionary_mirrored.keys():
+            string += dictionary_mirrored.get(i)
+    print(string)
+
+
