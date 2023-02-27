@@ -14,12 +14,12 @@ print('Добро пожаловать в Сербизатор! Эта прог�
       'Введите слово или фразу, чтобы увидеть результат.')
 
 inputed_list = list(input())
-    string = ''
-    for i in inputed_list:
-        if i in dictionary.keys():
-            string += dictionary.get(i)
-        if i in dictionary_mirrored.keys():
-            string += dictionary_mirrored.get(i)
-    print(string)
+string = ''
+for i in inputed_list:
+    if i in dictionary.keys():
+        string += dictionary.get(i)
+    if i in dictionary_mirrored.keys():
+        string += dictionary_mirrored.get(i)
+print(string)
 
 
